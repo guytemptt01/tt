@@ -1,0 +1,12 @@
+<div class="fullWidth">
+  <div class="wrapper">
+
+    <ng-container *ngIf="!!playlists.length">
+      <app-card
+        *ngFor="let p of playlists"
+        [playlist]="p">
+      </app-card>
+    </ng-container>
+
+  </div>
+</div>

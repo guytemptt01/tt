@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/reset-css/sass/reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import 'vars';
+
+html {
+  font-size: 16px;
+}
+
+.fullWidth {
+  display: block;
+  width: 100vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: $wrapperWidth;
+  margin: 0 auto;
+  @include typeface();
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include typeface();
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+h5, h6 {
+  font-weight: 400;
+}

@@ -1,0 +1,29 @@
+@import 'vars';
+
+.fullWidth {
+  background-color: $secondary;
+
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+.menu {
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        text-decoration: none;
+        color: $primaryText;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
